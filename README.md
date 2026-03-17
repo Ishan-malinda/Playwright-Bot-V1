@@ -19,8 +19,8 @@ graph TD
     end
 
     subgraph "Backend API (Node.js)"
-        D -->|node-postgres: Pooled| E[Express.js Server]
-        E -->|REST API Port 5001| F[/api/patients]
+        D -->|node-postgres: Pooled| E["Express.js Server"]
+        E -->|REST API Port 5001| F["/api/patients"]
     end
 
     subgraph "End User / Frontend"
